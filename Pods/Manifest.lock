@@ -1,0 +1,15 @@
+PODS:
+  - JSONModel (1.0.2)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+
+DEPENDENCIES:
+  - JSONModel
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+
+COCOAPODS: 0.36.3

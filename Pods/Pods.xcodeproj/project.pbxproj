@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E0152E0D1509B9FED5346C /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B69BB7D9CC9BA5A6B6F16D /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0340835F6414C2137C136750 /* Pods-RottenTomatos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289AF5A9E2417648E3D8F11 /* Pods-RottenTomatos-dummy.m */; };
+		140BF08103B9FD85584BAEC2 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 13155631605F2A995AB64248 /* JSONHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		16C4524F99FAA91B5D1BC57C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624BF6552D919779F9B5D945 /* Foundation.framework */; };
+		1B319BA1FFF531AC3DD8C86F /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A96F9904F3BCE8ABE8D6843 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F1D7C69E612EE8DA354DD04 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CDE1B4BF8E5FF8A62E5160 /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DCA4453892CCAE79C5FD2E4 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE83A3FD22A4D303B456F49 /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2E75D85FE0358264F2DD77F5 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B395EEB0A27B632465B909 /* NSArray+JSONModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3255178E36CDC758A6797E14 /* NSArray+JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E3FA22DA4D494DBB0169C76A /* NSArray+JSONModel.h */; };
+		37A4D896BA017B2C35BB4E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624BF6552D919779F9B5D945 /* Foundation.framework */; };
+		3C13DF8B43D59B36AB8270E8 /* Pods-RottenTomatos-SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A218FD763C42C8E30012BC1 /* Pods-RottenTomatos-SDWebImage-dummy.m */; };
+		3D3D7429A19FEB6BD8D62B10 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = BA70B278E0C29600EFBB4015 /* JSONModelLib.h */; };
+		48740FAC68B171DC706991FB /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFB60E530A1BF327AAF3208 /* SDWebImagePrefetcher.h */; };
+		5498E0E9DA3132D2BCBC0184 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = BD019258ECBC4490FCDEF5B9 /* SDWebImageDownloader.h */; };
+		56F5A4089D17CA14D3A3ECD1 /* Pods-RottenTomatos-JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE02283E2C4BC82AE61CC07 /* Pods-RottenTomatos-JSONModel-dummy.m */; };
+		5953070BB70FA3BD95A8DBCE /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A3474A6DBCED7BBA69973D3B /* JSONKeyMapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B93CDCC2AEDC60A1F4B1D93 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 414EF745597448E29B3315E3 /* NSData+ImageContentType.h */; };
+		6069C6A36522443F4B6E947F /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = B8301497C6B4A8FADA189B81 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		662205C2330F0D77B433619E /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237367F2FC23D0F5578D05A /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6C27071BA7CA0D3F5E55FDDD /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF0558F7704C2A9188FFC59 /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6C9E1B08653887F929AD5454 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C3B8A61005D87618FE0599 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		703E679480E2EAFAC5F7FE0A /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 69DEDECC062CCABD7CA47933 /* UIButton+WebCache.h */; };
+		7569BB73F88C7D20258006FC /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A03A3BB9B66C824B40931E /* SDWebImageDownloaderOperation.h */; };
+		75EAB207C74BD83BFC9617DF /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 398BA038F4EA98793F023480 /* JSONModel+networking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		764952A614AEAC34265C267E /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB66DEF1A0A39DC1BA749D5 /* SDWebImageCompat.h */; };
+		76DD32421149907AC1F99742 /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = F65A64E4271E2875A8DA9FAE /* JSONModelError.h */; };
+		79038517C68C3B29F0A5EF01 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 366410430A5D8E5739F35B63 /* JSONValueTransformer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7DED93BA08CD4D1927D949CF /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA13D81D6327993BC15FB81 /* JSONModelError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		816B0340CD64C9E0C6433D9F /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 702CD397F4F1C87349BA6289 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		87B960FCAF3C710920ABD0A2 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C0FD08562F5913D385B1F6 /* UIImage+GIF.h */; };
+		8A68C7378195640695DCAD83 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B121BDDFA7D338D5C4CB62A6 /* JSONModel.h */; };
+		8EE59D3B4C68840F11F2D9DE /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C943A18CB6D92242E3E9F0 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		94674187C0B528993C828C9A /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A16E167F97CB9A5655C8928 /* JSONModel+networking.h */; };
+		95BBAD9EC28BC541163AF893 /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1382D85B7D2B32D425419460 /* JSONModelClassProperty.h */; };
+		965443290C122FE29511E74E /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EAD362F907508F51F07E5D4 /* UIImage+MultiFormat.h */; };
+		98DE642F00E2ABFFCA075ED8 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8CE19A1514272AA1B08D8C /* SDWebImageManager.h */; };
+		9D84707916E8587AE41E5553 /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F298AD5410E51619AC8C76 /* JSONValueTransformer.h */; };
+		A70A2CC54A4B4266E1343D41 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFD8DC8CC7E5FA0B905E8A8 /* SDImageCache.h */; };
+		A820B2715BA9694AA6CED310 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7411531C4530DC8BC5876 /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A8B4D47A4C111383A5E78522 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C27D0A0A0443F9ACBBF62D12 /* SDWebImageOperation.h */; };
+		AC395957780532A753992F64 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3B617A0DFA53FD023D28F /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ACCBD2B4C0CCB789E3AFA92E /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BA7D36667F65352843111A46 /* UIImageView+WebCache.h */; };
+		AD19A172F8A90B3F06CF6313 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 112592F29DA7DE4F4F22C232 /* JSONAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6597DBE57F6DCCED2992337 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44880907523EC6F252AF87BE /* UIView+WebCacheOperation.h */; };
+		BABC04A08C787CDFC98726B3 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A19B75F93440418D19D1F9 /* JSONModelArray.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CBB80737DC232C544B5573A8 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E334873F7524836FD429F053 /* UIImageView+HighlightedWebCache.h */; };
+		CDDD4665D17123549EEAEA81 /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A84111038E31B55361C734 /* JSONAPI.h */; };
+		CE1C69C04E64FC0F1D5D140E /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF7BECD93E172F20811C5AB /* JSONModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2C6596A1E075CF162970A64 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = AA65D68C448315A5028DD4C4 /* SDWebImageDecoder.h */; };
+		D78DDF2CAF0D6135812F8B07 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CB2DF4AE74F23E0DF6B96 /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D7D547B10D8C817463DFE6BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624BF6552D919779F9B5D945 /* Foundation.framework */; };
+		E31B39F25D7586F2159CDE35 /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C0775F1A2F35A6A78DBE61F1 /* JSONKeyMapper.h */; };
+		E3ACCB908207510C9B235624 /* JSONModelArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 283BDA8D8D7E56E422CC7EA6 /* JSONModelArray.h */; };
+		E98DBD28CA63F77B8DA14BD7 /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE6DE288F182AB7863D0ABB /* JSONHTTPClient.h */; };
+		F0D93E3A9985C898729A8EE2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203F64B7CE342F4FABB1D42 /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F736FE1AEB70A964CF45A83D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B33DE95AE809D272B0FACA0 /* ImageIO.framework */; };
+		FBCD8DD2DE95672988B37F41 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 968532DC8AA2AF246F14F917 /* JSONModelClassProperty.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B053487283DC75B26201AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 957861F72B5D4F5504DC56B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03AC8A3CF8D621C5EF665079;
+			remoteInfo = "Pods-RottenTomatos-SDWebImage";
+		};
+		8F1EC2F72867E5B8DCF98749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 957861F72B5D4F5504DC56B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BCD35AB710AA8410042020F;
+			remoteInfo = "Pods-RottenTomatos-JSONModel";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AE6DE288F182AB7863D0ABB /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
+		112592F29DA7DE4F4F22C232 /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
+		13155631605F2A995AB64248 /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
+		1382D85B7D2B32D425419460 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = JSONModel/JSONModel/JSONModelClassProperty.h; sourceTree = "<group>"; };
+		19B395EEB0A27B632465B909 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+JSONModel.m"; path = "JSONModel/JSONModelCategories/NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		1A86E8102DC7FF17EEE94FE8 /* Pods-RottenTomatos-JSONModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RottenTomatos-JSONModel.xcconfig"; sourceTree = "<group>"; };
+		1EAD362F907508F51F07E5D4 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		25A84111038E31B55361C734 /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = JSONModel/JSONModelNetworking/JSONAPI.h; sourceTree = "<group>"; };
+		283BDA8D8D7E56E422CC7EA6 /* JSONModelArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelArray.h; path = JSONModel/JSONModel/JSONModelArray.h; sourceTree = "<group>"; };
+		2BA13D81D6327993BC15FB81 /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
+		2CA3B617A0DFA53FD023D28F /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		31B2AB0FCBE4CF02B0BF6810 /* Pods-RottenTomatos-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RottenTomatos-environment.h"; sourceTree = "<group>"; };
+		3336D07561C8B931D833C93A /* Pods-RottenTomatos-JSONModel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RottenTomatos-JSONModel-Private.xcconfig"; sourceTree = "<group>"; };
+		366410430A5D8E5739F35B63 /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
+		38A19B75F93440418D19D1F9 /* JSONModelArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelArray.m; path = JSONModel/JSONModel/JSONModelArray.m; sourceTree = "<group>"; };
+		398BA038F4EA98793F023480 /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
+		3A16E167F97CB9A5655C8928 /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
+		3A96F9904F3BCE8ABE8D6843 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		3B33DE95AE809D272B0FACA0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		414EF745597448E29B3315E3 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		41F298AD5410E51619AC8C76 /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
+		4203F64B7CE342F4FABB1D42 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		4237367F2FC23D0F5578D05A /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		4289AF5A9E2417648E3D8F11 /* Pods-RottenTomatos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RottenTomatos-dummy.m"; sourceTree = "<group>"; };
+		44880907523EC6F252AF87BE /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		48826B7EAAE81BFF60FC2C07 /* Pods-RottenTomatos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RottenTomatos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4CFD8DC8CC7E5FA0B905E8A8 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		4E5D6031313988336988767A /* libPods-RottenTomatos-SDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RottenTomatos-SDWebImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFB60E530A1BF327AAF3208 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		55AB75BEE3084630AB453170 /* Pods-RottenTomatos-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RottenTomatos-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		5A218FD763C42C8E30012BC1 /* Pods-RottenTomatos-SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RottenTomatos-SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		624BF6552D919779F9B5D945 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		69DEDECC062CCABD7CA47933 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		702CD397F4F1C87349BA6289 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		7CE02283E2C4BC82AE61CC07 /* Pods-RottenTomatos-JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RottenTomatos-JSONModel-dummy.m"; sourceTree = "<group>"; };
+		7DF0558F7704C2A9188FFC59 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		8E7F9B7B63335ADBD3521029 /* Pods-RottenTomatos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RottenTomatos.debug.xcconfig"; sourceTree = "<group>"; };
+		968532DC8AA2AF246F14F917 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
+		99C3B8A61005D87618FE0599 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		9CE83A3FD22A4D303B456F49 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		9DB1223483F9CA9EE74D3609 /* Pods-RottenTomatos-SDWebImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RottenTomatos-SDWebImage-Private.xcconfig"; sourceTree = "<group>"; };
+		9EB66DEF1A0A39DC1BA749D5 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		A3474A6DBCED7BBA69973D3B /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
+		A6063776852261BB2C5C86F8 /* Pods-RottenTomatos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RottenTomatos-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9A03A3BB9B66C824B40931E /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		AA65D68C448315A5028DD4C4 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		AD5C8496256A3458C0223B17 /* Pods-RottenTomatos-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RottenTomatos-SDWebImage.xcconfig"; sourceTree = "<group>"; };
+		B121BDDFA7D338D5C4CB62A6 /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
+		B2B69BB7D9CC9BA5A6B6F16D /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		B51B6D59ABAA136F0817DE63 /* Pods-RottenTomatos-JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RottenTomatos-JSONModel-prefix.pch"; sourceTree = "<group>"; };
+		B8301497C6B4A8FADA189B81 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		B9B7411531C4530DC8BC5876 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		BA70B278E0C29600EFBB4015 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
+		BA7D36667F65352843111A46 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		BD019258ECBC4490FCDEF5B9 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		C0775F1A2F35A6A78DBE61F1 /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
+		C27D0A0A0443F9ACBBF62D12 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		C6F7B48291005DBD00CBEB43 /* libPods-RottenTomatos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RottenTomatos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77E186B4C0CDB202F78E7F2 /* Pods-RottenTomatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RottenTomatos.release.xcconfig"; sourceTree = "<group>"; };
+		D9C943A18CB6D92242E3E9F0 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		DAD49DFEFE3ECE0F371B87A6 /* Pods-RottenTomatos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RottenTomatos-resources.sh"; sourceTree = "<group>"; };
+		E29CB2DF4AE74F23E0DF6B96 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		E334873F7524836FD429F053 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		E3FA22DA4D494DBB0169C76A /* NSArray+JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+JSONModel.h"; path = "JSONModel/JSONModelCategories/NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		EC19CD3A4A2AA020A3DA8816 /* libPods-RottenTomatos-JSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RottenTomatos-JSONModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEF7BECD93E172F20811C5AB /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
+		F2C0FD08562F5913D385B1F6 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		F54B46B609B033D0E6C0DB5F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F65A64E4271E2875A8DA9FAE /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
+		F7CDE1B4BF8E5FF8A62E5160 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		FF8CE19A1514272AA1B08D8C /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39F968BD56FAC905C9415E35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D547B10D8C817463DFE6BE /* Foundation.framework in Frameworks */,
+				F736FE1AEB70A964CF45A83D /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		904221DC1E479F1DDFD1112C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C4524F99FAA91B5D1BC57C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24E431B8617ADE9389788AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A4D896BA017B2C35BB4E08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBE720CAA216A4F82BE1FF9 /* Pods-RottenTomatos */ = {
+			isa = PBXGroup;
+			children = (
+				48826B7EAAE81BFF60FC2C07 /* Pods-RottenTomatos-acknowledgements.markdown */,
+				A6063776852261BB2C5C86F8 /* Pods-RottenTomatos-acknowledgements.plist */,
+				4289AF5A9E2417648E3D8F11 /* Pods-RottenTomatos-dummy.m */,
+				31B2AB0FCBE4CF02B0BF6810 /* Pods-RottenTomatos-environment.h */,
+				DAD49DFEFE3ECE0F371B87A6 /* Pods-RottenTomatos-resources.sh */,
+				8E7F9B7B63335ADBD3521029 /* Pods-RottenTomatos.debug.xcconfig */,
+				D77E186B4C0CDB202F78E7F2 /* Pods-RottenTomatos.release.xcconfig */,
+			);
+			name = "Pods-RottenTomatos";
+			path = "Target Support Files/Pods-RottenTomatos";
+			sourceTree = "<group>";
+		};
+		14495C4ABA80520F16A6E02D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A86E8102DC7FF17EEE94FE8 /* Pods-RottenTomatos-JSONModel.xcconfig */,
+				3336D07561C8B931D833C93A /* Pods-RottenTomatos-JSONModel-Private.xcconfig */,
+				7CE02283E2C4BC82AE61CC07 /* Pods-RottenTomatos-JSONModel-dummy.m */,
+				B51B6D59ABAA136F0817DE63 /* Pods-RottenTomatos-JSONModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RottenTomatos-JSONModel";
+			sourceTree = "<group>";
+		};
+		2963776E7986256741E85070 = {
+			isa = PBXGroup;
+			children = (
+				F54B46B609B033D0E6C0DB5F /* Podfile */,
+				576D4052AAB28C15D3AC75E8 /* Frameworks */,
+				DE23201F621EB6A28CE54082 /* Pods */,
+				7636DE177D8B2FAB796993F2 /* Products */,
+				3F42E82A990D41A564150FBF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		3F42E82A990D41A564150FBF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBE720CAA216A4F82BE1FF9 /* Pods-RottenTomatos */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		576D4052AAB28C15D3AC75E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3A1B272A50D384D0C64A349 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7636DE177D8B2FAB796993F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6F7B48291005DBD00CBEB43 /* libPods-RottenTomatos.a */,
+				EC19CD3A4A2AA020A3DA8816 /* libPods-RottenTomatos-JSONModel.a */,
+				4E5D6031313988336988767A /* libPods-RottenTomatos-SDWebImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0A1E94C2702607D5487381F /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				F43010E6D4500F82338CD719 /* Core */,
+				FEB2D17E9FB952116A191C6B /* Support Files */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		A96FB8FAF479E85B03AFF150 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				25A84111038E31B55361C734 /* JSONAPI.h */,
+				112592F29DA7DE4F4F22C232 /* JSONAPI.m */,
+				0AE6DE288F182AB7863D0ABB /* JSONHTTPClient.h */,
+				13155631605F2A995AB64248 /* JSONHTTPClient.m */,
+				C0775F1A2F35A6A78DBE61F1 /* JSONKeyMapper.h */,
+				A3474A6DBCED7BBA69973D3B /* JSONKeyMapper.m */,
+				B121BDDFA7D338D5C4CB62A6 /* JSONModel.h */,
+				EEF7BECD93E172F20811C5AB /* JSONModel.m */,
+				3A16E167F97CB9A5655C8928 /* JSONModel+networking.h */,
+				398BA038F4EA98793F023480 /* JSONModel+networking.m */,
+				283BDA8D8D7E56E422CC7EA6 /* JSONModelArray.h */,
+				38A19B75F93440418D19D1F9 /* JSONModelArray.m */,
+				1382D85B7D2B32D425419460 /* JSONModelClassProperty.h */,
+				968532DC8AA2AF246F14F917 /* JSONModelClassProperty.m */,
+				F65A64E4271E2875A8DA9FAE /* JSONModelError.h */,
+				2BA13D81D6327993BC15FB81 /* JSONModelError.m */,
+				BA70B278E0C29600EFBB4015 /* JSONModelLib.h */,
+				41F298AD5410E51619AC8C76 /* JSONValueTransformer.h */,
+				366410430A5D8E5739F35B63 /* JSONValueTransformer.m */,
+				E3FA22DA4D494DBB0169C76A /* NSArray+JSONModel.h */,
+				19B395EEB0A27B632465B909 /* NSArray+JSONModel.m */,
+				14495C4ABA80520F16A6E02D /* Support Files */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		D3A1B272A50D384D0C64A349 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				624BF6552D919779F9B5D945 /* Foundation.framework */,
+				3B33DE95AE809D272B0FACA0 /* ImageIO.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DE23201F621EB6A28CE54082 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A96FB8FAF479E85B03AFF150 /* JSONModel */,
+				A0A1E94C2702607D5487381F /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F43010E6D4500F82338CD719 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				414EF745597448E29B3315E3 /* NSData+ImageContentType.h */,
+				B9B7411531C4530DC8BC5876 /* NSData+ImageContentType.m */,
+				4CFD8DC8CC7E5FA0B905E8A8 /* SDImageCache.h */,
+				702CD397F4F1C87349BA6289 /* SDImageCache.m */,
+				9EB66DEF1A0A39DC1BA749D5 /* SDWebImageCompat.h */,
+				B2B69BB7D9CC9BA5A6B6F16D /* SDWebImageCompat.m */,
+				AA65D68C448315A5028DD4C4 /* SDWebImageDecoder.h */,
+				2CA3B617A0DFA53FD023D28F /* SDWebImageDecoder.m */,
+				BD019258ECBC4490FCDEF5B9 /* SDWebImageDownloader.h */,
+				7DF0558F7704C2A9188FFC59 /* SDWebImageDownloader.m */,
+				A9A03A3BB9B66C824B40931E /* SDWebImageDownloaderOperation.h */,
+				99C3B8A61005D87618FE0599 /* SDWebImageDownloaderOperation.m */,
+				FF8CE19A1514272AA1B08D8C /* SDWebImageManager.h */,
+				D9C943A18CB6D92242E3E9F0 /* SDWebImageManager.m */,
+				C27D0A0A0443F9ACBBF62D12 /* SDWebImageOperation.h */,
+				4FFB60E530A1BF327AAF3208 /* SDWebImagePrefetcher.h */,
+				E29CB2DF4AE74F23E0DF6B96 /* SDWebImagePrefetcher.m */,
+				69DEDECC062CCABD7CA47933 /* UIButton+WebCache.h */,
+				3A96F9904F3BCE8ABE8D6843 /* UIButton+WebCache.m */,
+				F2C0FD08562F5913D385B1F6 /* UIImage+GIF.h */,
+				B8301497C6B4A8FADA189B81 /* UIImage+GIF.m */,
+				1EAD362F907508F51F07E5D4 /* UIImage+MultiFormat.h */,
+				4237367F2FC23D0F5578D05A /* UIImage+MultiFormat.m */,
+				E334873F7524836FD429F053 /* UIImageView+HighlightedWebCache.h */,
+				9CE83A3FD22A4D303B456F49 /* UIImageView+HighlightedWebCache.m */,
+				BA7D36667F65352843111A46 /* UIImageView+WebCache.h */,
+				4203F64B7CE342F4FABB1D42 /* UIImageView+WebCache.m */,
+				44880907523EC6F252AF87BE /* UIView+WebCacheOperation.h */,
+				F7CDE1B4BF8E5FF8A62E5160 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		FEB2D17E9FB952116A191C6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C8496256A3458C0223B17 /* Pods-RottenTomatos-SDWebImage.xcconfig */,
+				9DB1223483F9CA9EE74D3609 /* Pods-RottenTomatos-SDWebImage-Private.xcconfig */,
+				5A218FD763C42C8E30012BC1 /* Pods-RottenTomatos-SDWebImage-dummy.m */,
+				55AB75BEE3084630AB453170 /* Pods-RottenTomatos-SDWebImage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-RottenTomatos-SDWebImage";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		171715600271BC20C1EF4AF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B93CDCC2AEDC60A1F4B1D93 /* NSData+ImageContentType.h in Headers */,
+				A70A2CC54A4B4266E1343D41 /* SDImageCache.h in Headers */,
+				764952A614AEAC34265C267E /* SDWebImageCompat.h in Headers */,
+				D2C6596A1E075CF162970A64 /* SDWebImageDecoder.h in Headers */,
+				5498E0E9DA3132D2BCBC0184 /* SDWebImageDownloader.h in Headers */,
+				7569BB73F88C7D20258006FC /* SDWebImageDownloaderOperation.h in Headers */,
+				98DE642F00E2ABFFCA075ED8 /* SDWebImageManager.h in Headers */,
+				A8B4D47A4C111383A5E78522 /* SDWebImageOperation.h in Headers */,
+				48740FAC68B171DC706991FB /* SDWebImagePrefetcher.h in Headers */,
+				703E679480E2EAFAC5F7FE0A /* UIButton+WebCache.h in Headers */,
+				87B960FCAF3C710920ABD0A2 /* UIImage+GIF.h in Headers */,
+				965443290C122FE29511E74E /* UIImage+MultiFormat.h in Headers */,
+				CBB80737DC232C544B5573A8 /* UIImageView+HighlightedWebCache.h in Headers */,
+				ACCBD2B4C0CCB789E3AFA92E /* UIImageView+WebCache.h in Headers */,
+				B6597DBE57F6DCCED2992337 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E7EC852FA43DECF7F2CD75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDD4665D17123549EEAEA81 /* JSONAPI.h in Headers */,
+				E98DBD28CA63F77B8DA14BD7 /* JSONHTTPClient.h in Headers */,
+				E31B39F25D7586F2159CDE35 /* JSONKeyMapper.h in Headers */,
+				94674187C0B528993C828C9A /* JSONModel+networking.h in Headers */,
+				8A68C7378195640695DCAD83 /* JSONModel.h in Headers */,
+				E3ACCB908207510C9B235624 /* JSONModelArray.h in Headers */,
+				95BBAD9EC28BC541163AF893 /* JSONModelClassProperty.h in Headers */,
+				76DD32421149907AC1F99742 /* JSONModelError.h in Headers */,
+				3D3D7429A19FEB6BD8D62B10 /* JSONModelLib.h in Headers */,
+				9D84707916E8587AE41E5553 /* JSONValueTransformer.h in Headers */,
+				3255178E36CDC758A6797E14 /* NSArray+JSONModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03AC8A3CF8D621C5EF665079 /* Pods-RottenTomatos-SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC997C0B9B442844BE45483 /* Build configuration list for PBXNativeTarget "Pods-RottenTomatos-SDWebImage" */;
+			buildPhases = (
+				D1B7F541D380A491B1E62E43 /* Sources */,
+				39F968BD56FAC905C9415E35 /* Frameworks */,
+				171715600271BC20C1EF4AF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RottenTomatos-SDWebImage";
+			productName = "Pods-RottenTomatos-SDWebImage";
+			productReference = 4E5D6031313988336988767A /* libPods-RottenTomatos-SDWebImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4BCD35AB710AA8410042020F /* Pods-RottenTomatos-JSONModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C33C7DB5D4F2236427366F99 /* Build configuration list for PBXNativeTarget "Pods-RottenTomatos-JSONModel" */;
+			buildPhases = (
+				6BB216DA34391A898D12B033 /* Sources */,
+				A24E431B8617ADE9389788AB /* Frameworks */,
+				37E7EC852FA43DECF7F2CD75 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RottenTomatos-JSONModel";
+			productName = "Pods-RottenTomatos-JSONModel";
+			productReference = EC19CD3A4A2AA020A3DA8816 /* libPods-RottenTomatos-JSONModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BF587707E95711271085F77 /* Pods-RottenTomatos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED9871BF0FD41A7151487F28 /* Build configuration list for PBXNativeTarget "Pods-RottenTomatos" */;
+			buildPhases = (
+				1DBA3B60772169B264908FF8 /* Sources */,
+				904221DC1E479F1DDFD1112C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F018AEE85D3BB765BF76AA5 /* PBXTargetDependency */,
+				844D95EC7F116C6358565575 /* PBXTargetDependency */,
+			);
+			name = "Pods-RottenTomatos";
+			productName = "Pods-RottenTomatos";
+			productReference = C6F7B48291005DBD00CBEB43 /* libPods-RottenTomatos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		957861F72B5D4F5504DC56B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 4A50ECA31A1BEE9B38A33915 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2963776E7986256741E85070;
+			productRefGroup = 7636DE177D8B2FAB796993F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BF587707E95711271085F77 /* Pods-RottenTomatos */,
+				4BCD35AB710AA8410042020F /* Pods-RottenTomatos-JSONModel */,
+				03AC8A3CF8D621C5EF665079 /* Pods-RottenTomatos-SDWebImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DBA3B60772169B264908FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0340835F6414C2137C136750 /* Pods-RottenTomatos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB216DA34391A898D12B033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD19A172F8A90B3F06CF6313 /* JSONAPI.m in Sources */,
+				140BF08103B9FD85584BAEC2 /* JSONHTTPClient.m in Sources */,
+				5953070BB70FA3BD95A8DBCE /* JSONKeyMapper.m in Sources */,
+				75EAB207C74BD83BFC9617DF /* JSONModel+networking.m in Sources */,
+				CE1C69C04E64FC0F1D5D140E /* JSONModel.m in Sources */,
+				BABC04A08C787CDFC98726B3 /* JSONModelArray.m in Sources */,
+				FBCD8DD2DE95672988B37F41 /* JSONModelClassProperty.m in Sources */,
+				7DED93BA08CD4D1927D949CF /* JSONModelError.m in Sources */,
+				79038517C68C3B29F0A5EF01 /* JSONValueTransformer.m in Sources */,
+				2E75D85FE0358264F2DD77F5 /* NSArray+JSONModel.m in Sources */,
+				56F5A4089D17CA14D3A3ECD1 /* Pods-RottenTomatos-JSONModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B7F541D380A491B1E62E43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A820B2715BA9694AA6CED310 /* NSData+ImageContentType.m in Sources */,
+				3C13DF8B43D59B36AB8270E8 /* Pods-RottenTomatos-SDWebImage-dummy.m in Sources */,
+				816B0340CD64C9E0C6433D9F /* SDImageCache.m in Sources */,
+				00E0152E0D1509B9FED5346C /* SDWebImageCompat.m in Sources */,
+				AC395957780532A753992F64 /* SDWebImageDecoder.m in Sources */,
+				6C27071BA7CA0D3F5E55FDDD /* SDWebImageDownloader.m in Sources */,
+				6C9E1B08653887F929AD5454 /* SDWebImageDownloaderOperation.m in Sources */,
+				8EE59D3B4C68840F11F2D9DE /* SDWebImageManager.m in Sources */,
+				D78DDF2CAF0D6135812F8B07 /* SDWebImagePrefetcher.m in Sources */,
+				1B319BA1FFF531AC3DD8C86F /* UIButton+WebCache.m in Sources */,
+				6069C6A36522443F4B6E947F /* UIImage+GIF.m in Sources */,
+				662205C2330F0D77B433619E /* UIImage+MultiFormat.m in Sources */,
+				2DCA4453892CCAE79C5FD2E4 /* UIImageView+HighlightedWebCache.m in Sources */,
+				F0D93E3A9985C898729A8EE2 /* UIImageView+WebCache.m in Sources */,
+				1F1D7C69E612EE8DA354DD04 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F018AEE85D3BB765BF76AA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RottenTomatos-JSONModel";
+			target = 4BCD35AB710AA8410042020F /* Pods-RottenTomatos-JSONModel */;
+			targetProxy = 8F1EC2F72867E5B8DCF98749 /* PBXContainerItemProxy */;
+		};
+		844D95EC7F116C6358565575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RottenTomatos-SDWebImage";
+			target = 03AC8A3CF8D621C5EF665079 /* Pods-RottenTomatos-SDWebImage */;
+			targetProxy = 4B053487283DC75B26201AF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00285D12C5D672034515E464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7F9B7B63335ADBD3521029 /* Pods-RottenTomatos.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2B3CF5644AA88249A74EA9BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		78B4C674438D888892F54D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77E186B4C0CDB202F78E7F2 /* Pods-RottenTomatos.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9362528FE054EF68395D3D32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB1223483F9CA9EE74D3609 /* Pods-RottenTomatos-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RottenTomatos-SDWebImage/Pods-RottenTomatos-SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE4F2844D0CAC8900476D9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3336D07561C8B931D833C93A /* Pods-RottenTomatos-JSONModel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RottenTomatos-JSONModel/Pods-RottenTomatos-JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CE40B6D71A072E85003009C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB1223483F9CA9EE74D3609 /* Pods-RottenTomatos-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RottenTomatos-SDWebImage/Pods-RottenTomatos-SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E35D6F050C186DB38233F775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E95EBDFB32E3F6E26C9A303D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3336D07561C8B931D833C93A /* Pods-RottenTomatos-JSONModel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RottenTomatos-JSONModel/Pods-RottenTomatos-JSONModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A50ECA31A1BEE9B38A33915 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B3CF5644AA88249A74EA9BC /* Debug */,
+				E35D6F050C186DB38233F775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC997C0B9B442844BE45483 /* Build configuration list for PBXNativeTarget "Pods-RottenTomatos-SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9362528FE054EF68395D3D32 /* Debug */,
+				CE40B6D71A072E85003009C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C33C7DB5D4F2236427366F99 /* Build configuration list for PBXNativeTarget "Pods-RottenTomatos-JSONModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95EBDFB32E3F6E26C9A303D /* Debug */,
+				AE4F2844D0CAC8900476D9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED9871BF0FD41A7151487F28 /* Build configuration list for PBXNativeTarget "Pods-RottenTomatos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00285D12C5D672034515E464 /* Debug */,
+				78B4C674438D888892F54D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 957861F72B5D4F5504DC56B2 /* Project object */;
+}

@@ -44,9 +44,9 @@ typedef void (^requestCompletionBlock) (BOOL success,NSString *responseString,NS
     //NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
     
 }
--(void)searchMoviesForKeyword:(NSString *)searchKeyWord andPageNo:(NSString*)pageNo withComplationBlock:(requestCompletionBlock)reqCompletionBlock
+-(void)searchMoviesForKeyword:(NSString *)searchKeyWord andPageNo:(NSInteger)pageNo withComplationBlock:(requestCompletionBlock)reqCompletionBlock
 {
-    NSString *searchUrlStr = [NSString stringWithFormat:@"%@%@query=%@&api_key=%@&page=%@",BASE_URL,SEARCHMOVIE_URL,searchKeyWord,API_KEY,pageNo];
+    NSString *searchUrlStr = [NSString stringWithFormat:@"%@%@query=%@&api_key=%@&page=%ld",BASE_URL,SEARCHMOVIE_URL,searchKeyWord,API_KEY,(long)pageNo];
     NSLog(@"Search Url: %@",searchUrlStr);
     NSURL* url = [[NSURL alloc] initWithString:searchUrlStr];
     NSURLRequest *searchRequest = [[NSURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:60.0];

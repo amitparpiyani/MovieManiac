@@ -12,14 +12,18 @@
 #import "Configuration.h"
 #import "PreloaderViewController.h"
 #import "MovieTableViewCell.h"
-#define REUSE_IDENTIFIER @"MovieCellIdentifier"
+#import "MovieInformationCell.h"
+#import "RottenTomatosController.h"
+#import "MoviesTableViewDataSource.h"
+#import "Constants.h"
 
-@interface FirstViewController ()<UISearchBarDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface FirstViewController ()<UISearchBarDelegate,RottenTomatosDelegate>
 {
     PreloaderViewController *preLoaderViewController;
     Movies *searchMoviesResult;
     NSMutableArray *movieList;
     NSString *searchKeyword;
+    MoviesTableViewDataSource *moviesTableViewDatasource;
 
 
 }
@@ -36,15 +40,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    //UIImage *searchImgIcon = [UIImage imageNamed:@"searchIcon.png"];
     [[self.searchImgBtn imageView] setContentMode: UIViewContentModeScaleAspectFit];
     [self.searchImgBtn setImage:[UIImage imageNamed:@"searchIcon.png"] forState:UIControlStateNormal];
     self.searchBar.delegate = self;
-    self.moviesTableView.delegate = self;
-    self.moviesTableView.dataSource = self;
+    moviesTableViewDatasource = [[MoviesTableViewDataSource alloc] init];
+    self.moviesTableView.delegate = moviesTableViewDatasource;
+    self.moviesTableView.dataSource = moviesTableViewDatasource;
     movieList = [[NSMutableArray alloc] init];
-    UINib *movieTableViewCell = [UINib nibWithNibName:@"MovieTableViewCell" bundle:[NSBundle mainBundle]];
-    [self.moviesTableView registerNib:movieTableViewCell forCellReuseIdentifier:REUSE_IDENTIFIER];
+    UINib *movieTableViewCell = [UINib nibWithNibName:@"MovieInformationCell" bundle:[NSBundle mainBundle]];
+    [self.moviesTableView registerNib:movieTableViewCell forCellReuseIdentifier:CELL_REUSE_IDENTIFIER];
+    self.moviesTableView.estimatedRowHeight = 280.0f;
+    self.moviesTableView.rowHeight = UITableViewAutomaticDimension;
+    [RottenTomatosController getSharedInstance].delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +59,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    //self.moviesTableView.estimatedRowHeight = 260.0f;
+    //self.moviesTableView.rowHeight = UITableViewAutomaticDimension;
+    [self.moviesTableView reloadData];
+    
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.moviesTableView reloadData];
+}
 
 - (IBAction)showSearchBar:(id)sender
 {
@@ -77,39 +95,9 @@
     preLoaderViewController = nil;
 }
 
--(void)searchMoviesWithKeyWord:(NSString *)keyword withPageNo:(NSString *)pageNo
-{
-    ServiceManager *serviceManager = [[ServiceManager alloc] init];
-    [serviceManager searchMoviesForKeyword:keyword andPageNo:pageNo withComplationBlock:^(BOOL success,NSString *responseString,NSError *error)
-     {
-         if (error) {
-             NSLog(@"%@",[error description]);
-         }
-         else
-         {
-             JSONModelError *jsonError;
-             searchMoviesResult = [[Movies alloc] initWithString:responseString error:&jsonError];
-             [movieList addObjectsFromArray:searchMoviesResult.moviesArray];
-             dispatch_async(dispatch_get_main_queue(), ^{
-                 [self removePreLoaderViewController];
-                 self.moviesTableView.hidden = NO;
-                 [self.moviesTableView reloadData];
 
 
-             });
-             
-         }
-     }
-     ];
-}
 
--(void)loadNewDataIfRequired:(NSInteger)currentRow
-{
-    if (currentRow > [movieList count]-2 && currentRow < searchMoviesResult.totalResults)
-    {
-        [self searchMoviesWithKeyWord:searchKeyword withPageNo:[NSString stringWithFormat:@"%ld",(long)searchMoviesResult.currentPage+1]];
-    }
-}
 
 
 #pragma -mark searchbar delegate
@@ -119,40 +107,20 @@
     [movieList removeAllObjects];
     searchMoviesResult = nil;
     searchKeyword=searchBar.text;
-    [self searchMoviesWithKeyWord:searchBar.text withPageNo:@"1"];
+    [[RottenTomatosController getSharedInstance] searchMoviesWithKeyword:searchKeyword andPageNo:1];
 }
 
-#pragma -mark tableviewDatasource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [movieList count];
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *cellIdentifier = REUSE_IDENTIFIER;
-    [self loadNewDataIfRequired:indexPath.row];
-    Movie *movie = [movieList objectAtIndex:indexPath.row];
-    MovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell==nil)
-    {
-        cell = [[MovieTableViewCell alloc] init];
-    
-    }
-    [cell updateCellWithMovieObject:movie];
-    if (movie.backdropPath!=nil)
-    {
-        [cell updateMovieThumbnail:movie.backdropPath];
-        
-    }
-    return cell;
-}
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+
+
+# pragma Rotten tomotos delegate
+- (void)dataUpdatesAvailable
 {
-    return 128.0f;
+    if (preLoaderViewController) {
+        [self removePreLoaderViewController];
+    }
+    [self.moviesTableView layoutSubviews];
+    self.moviesTableView.hidden = NO;
+    [self.moviesTableView reloadData];
 }
 @end

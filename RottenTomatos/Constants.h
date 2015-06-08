@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#define CELL_REUSE_IDENTIFIER  @"MovieInformationCell1"
 
 @interface Constants : NSObject
 extern NSString *const IMAGE_BASE_URL;
+extern NSString *const APPLICATION_FONT;
+extern NSString *const RATING_STAR_COLOR;
+
+
 
 @end

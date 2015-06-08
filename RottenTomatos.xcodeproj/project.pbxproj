@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F7D343C1B1CD24200FF2C3F /* moviemaniac.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7D343B1B1CD24200FF2C3F /* moviemaniac.ttf */; };
+		2FBBC2231B1D90C70089EE5D /* RatingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBC2221B1D90C70089EE5D /* RatingLabel.m */; };
 		2FC18BE41AD581E1004139E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC18BE31AD581E1004139E2 /* main.m */; };
 		2FC18BE71AD581E1004139E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC18BE61AD581E1004139E2 /* AppDelegate.m */; };
 		2FC18BEA1AD581E1004139E2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC18BE91AD581E1004139E2 /* FirstViewController.m */; };
@@ -17,7 +19,12 @@
 		2FC18C011AD581E1004139E2 /* RottenTomatosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC18C001AD581E1004139E2 /* RottenTomatosTests.m */; };
 		2FC18C0B1AD5826B004139E2 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2FC18C0A1AD5826B004139E2 /* TODO.txt */; };
 		2FC18C0E1AD58667004139E2 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC18C0D1AD58667004139E2 /* ServiceManager.m */; };
+		2FC3B3011B20C22C00AF11ED /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3B3001B20C22C00AF11ED /* UIColor-Expanded.m */; };
+		2FC3B3361B2418D400AF11ED /* RottenTomatosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3B3351B2418D400AF11ED /* RottenTomatosController.m */; };
+		2FC3B3391B24D62A00AF11ED /* MoviesTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3B3381B24D62A00AF11ED /* MoviesTableViewDataSource.m */; };
 		2FCD80921ADBD637005087E8 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD80911ADBD637005087E8 /* Constants.m */; };
+		2FEE446A1B1B676A00F61CF9 /* MovieInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEE44681B1B676A00F61CF9 /* MovieInformationCell.m */; };
+		2FEE446B1B1B676A00F61CF9 /* MovieInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FEE44691B1B676A00F61CF9 /* MovieInformationCell.xib */; };
 		2FEF6DF51AD9331E00C5938E /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF6DF41AD9331E00C5938E /* Movie.m */; };
 		2FEF6DF81ADA55C200C5938E /* Movies.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF6DF71ADA55C200C5938E /* Movies.m */; };
 		2FEF6DFB1ADABA8F00C5938E /* MovieDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF6DFA1ADABA8F00C5938E /* MovieDetails.m */; };
@@ -46,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		0468C1EA88FD63C482C18167 /* Pods-RottenTomatos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RottenTomatos.release.xcconfig"; path = "Pods/Target Support Files/Pods-RottenTomatos/Pods-RottenTomatos.release.xcconfig"; sourceTree = "<group>"; };
+		2F7D343B1B1CD24200FF2C3F /* moviemaniac.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = moviemaniac.ttf; sourceTree = "<group>"; };
+		2FBBC2211B1D90C70089EE5D /* RatingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingLabel.h; sourceTree = "<group>"; };
+		2FBBC2221B1D90C70089EE5D /* RatingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingLabel.m; sourceTree = "<group>"; };
 		2FC18BDE1AD581E1004139E2 /* RottenTomatos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC18BE21AD581E1004139E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC18BE31AD581E1004139E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,8 +74,17 @@
 		2FC18C0A1AD5826B004139E2 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		2FC18C0C1AD58667004139E2 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
 		2FC18C0D1AD58667004139E2 /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceManager.m; sourceTree = "<group>"; };
+		2FC3B2FF1B20C22C00AF11ED /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		2FC3B3001B20C22C00AF11ED /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		2FC3B3341B2418D400AF11ED /* RottenTomatosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RottenTomatosController.h; sourceTree = "<group>"; };
+		2FC3B3351B2418D400AF11ED /* RottenTomatosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RottenTomatosController.m; sourceTree = "<group>"; };
+		2FC3B3371B24D62A00AF11ED /* MoviesTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesTableViewDataSource.h; sourceTree = "<group>"; };
+		2FC3B3381B24D62A00AF11ED /* MoviesTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesTableViewDataSource.m; sourceTree = "<group>"; };
 		2FCD80901ADBD637005087E8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		2FCD80911ADBD637005087E8 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		2FEE44671B1B676A00F61CF9 /* MovieInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInformationCell.h; sourceTree = "<group>"; };
+		2FEE44681B1B676A00F61CF9 /* MovieInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieInformationCell.m; sourceTree = "<group>"; };
+		2FEE44691B1B676A00F61CF9 /* MovieInformationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieInformationCell.xib; sourceTree = "<group>"; };
 		2FEF6DF31AD9331E00C5938E /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		2FEF6DF41AD9331E00C5938E /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		2FEF6DF61ADA55C200C5938E /* Movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movies.h; sourceTree = "<group>"; };
@@ -111,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F001F4F1B1E223E0065C7C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F7D343B1B1CD24200FF2C3F /* moviemaniac.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2FC18BD51AD581E1004139E2 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +161,7 @@
 		2FC18BE01AD581E1004139E2 /* RottenTomatos */ = {
 			isa = PBXGroup;
 			children = (
+				2F001F4F1B1E223E0065C7C0 /* Resources */,
 				2FEF6E0A1ADB248C00C5938E /* Util */,
 				2FEF6E051ADB165D00C5938E /* Assets */,
 				2FEF6DF21AD932B800C5938E /* Model */,
@@ -156,6 +184,13 @@
 				2FEF6E181ADB5E6300C5938E /* MovieTableViewCell.xib */,
 				2FCD80901ADBD637005087E8 /* Constants.h */,
 				2FCD80911ADBD637005087E8 /* Constants.m */,
+				2FEE44671B1B676A00F61CF9 /* MovieInformationCell.h */,
+				2FEE44681B1B676A00F61CF9 /* MovieInformationCell.m */,
+				2FEE44691B1B676A00F61CF9 /* MovieInformationCell.xib */,
+				2FC3B3341B2418D400AF11ED /* RottenTomatosController.h */,
+				2FC3B3351B2418D400AF11ED /* RottenTomatosController.m */,
+				2FC3B3371B24D62A00AF11ED /* MoviesTableViewDataSource.h */,
+				2FC3B3381B24D62A00AF11ED /* MoviesTableViewDataSource.m */,
 			);
 			path = RottenTomatos;
 			sourceTree = "<group>";
@@ -184,6 +219,15 @@
 				2FC18BFF1AD581E1004139E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FC3B2FE1B20C1D000AF11ED /* UICOLOR */ = {
+			isa = PBXGroup;
+			children = (
+				2FC3B2FF1B20C22C00AF11ED /* UIColor-Expanded.h */,
+				2FC3B3001B20C22C00AF11ED /* UIColor-Expanded.m */,
+			);
+			name = UICOLOR;
 			sourceTree = "<group>";
 		};
 		2FEF6DF21AD932B800C5938E /* Model */ = {
@@ -217,9 +261,12 @@
 		2FEF6E0A1ADB248C00C5938E /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2FC3B2FE1B20C1D000AF11ED /* UICOLOR */,
 				2FEF6E0B1ADB256900C5938E /* PreloaderViewController.h */,
 				2FEF6E0C1ADB256900C5938E /* PreloaderViewController.m */,
 				2FEF6E0D1ADB256900C5938E /* PreloaderViewController.xib */,
+				2FBBC2211B1D90C70089EE5D /* RatingLabel.h */,
+				2FBBC2221B1D90C70089EE5D /* RatingLabel.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -326,12 +373,14 @@
 				2FEF6E1C1ADB784900C5938E /* defaultMovie.png in Resources */,
 				2FC18C0B1AD5826B004139E2 /* TODO.txt in Resources */,
 				2FC18BF01AD581E1004139E2 /* Main.storyboard in Resources */,
+				2F7D343C1B1CD24200FF2C3F /* moviemaniac.ttf in Resources */,
 				2FEF6E1A1ADB5E6300C5938E /* MovieTableViewCell.xib in Resources */,
 				2FEF6E121ADB2ACF00C5938E /* Localization.strings in Resources */,
 				2FC18BF51AD581E1004139E2 /* LaunchScreen.xib in Resources */,
 				2FC18BF21AD581E1004139E2 /* Images.xcassets in Resources */,
 				2FEF6E091ADB169E00C5938E /* searchIcon.png in Resources */,
 				2FEF6E0F1ADB256900C5938E /* PreloaderViewController.xib in Resources */,
+				2FEE446B1B1B676A00F61CF9 /* MovieInformationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,16 +435,21 @@
 				2FEF6DF81ADA55C200C5938E /* Movies.m in Sources */,
 				2FEF6DF51AD9331E00C5938E /* Movie.m in Sources */,
 				2FC18BED1AD581E1004139E2 /* SecondViewController.m in Sources */,
+				2FEE446A1B1B676A00F61CF9 /* MovieInformationCell.m in Sources */,
 				2FC18BE71AD581E1004139E2 /* AppDelegate.m in Sources */,
 				2FCD80921ADBD637005087E8 /* Constants.m in Sources */,
+				2FC3B3361B2418D400AF11ED /* RottenTomatosController.m in Sources */,
+				2FC3B3011B20C22C00AF11ED /* UIColor-Expanded.m in Sources */,
 				2FEF6E191ADB5E6300C5938E /* MovieTableViewCell.m in Sources */,
 				2FEF6E0E1ADB256900C5938E /* PreloaderViewController.m in Sources */,
 				2FC18C0E1AD58667004139E2 /* ServiceManager.m in Sources */,
 				2FC18BEA1AD581E1004139E2 /* FirstViewController.m in Sources */,
 				2FEF6DFE1ADAC43100C5938E /* Genre.m in Sources */,
 				2FEF6E041ADAFA0300C5938E /* ImageConfiguration.m in Sources */,
+				2FBBC2231B1D90C70089EE5D /* RatingLabel.m in Sources */,
 				2FC18BE41AD581E1004139E2 /* main.m in Sources */,
 				2FEF6DFB1ADABA8F00C5938E /* MovieDetails.m in Sources */,
+				2FC3B3391B24D62A00AF11ED /* MoviesTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

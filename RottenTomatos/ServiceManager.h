@@ -10,7 +10,7 @@
 typedef void (^requestCompletionBlock) (BOOL success,NSString *responseString,NSError *error);
 @interface ServiceManager : NSObject
 
--(void)searchMoviesForKeyword:(NSString *)searchKeyWord andPageNo:(NSString*)pageNo withComplationBlock:(requestCompletionBlock)reqCompletionBlock;
+-(void)searchMoviesForKeyword:(NSString *)searchKeyWord andPageNo:(NSInteger)pageNo withComplationBlock:(requestCompletionBlock)reqCompletionBlock;
 
 -(void)getDetailsOfMovie:(NSString *)movieId withCompletionBlock:(requestCompletionBlock)reqCompletionBlock;
 

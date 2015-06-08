@@ -20,7 +20,8 @@
                                                        @"backdrop_path" : @"backdropPath",
                                                        @"release_date" : @"releaseDate",
                                                        @"vote_average" : @"voteAverage",
-                                                       @"vote_count" : @"voteCount"
+                                                       @"vote_count" : @"voteCount",
+                                                       @"overview" : @"movieOverview"
                                                        }];
 }
 

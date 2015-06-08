@@ -25,4 +25,5 @@
 @property(nonatomic,assign)NSInteger voteCount;
 @property(nonatomic,retain)NSString *popularity;
 @property(nonatomic,assign)BOOL isVideoAvailable;
+@property (nonatomic,strong)NSString<Optional> *movieOverview;
 @end
